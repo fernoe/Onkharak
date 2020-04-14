@@ -1,0 +1,84 @@
+﻿@{
+    ViewBag.Title = "Contact";
+}
+    <div class="w3-banner-top" style="top:70px;position:relative;padding:10px;border-radius:3px;height:130px;">
+        <!--Section heading-->
+        <h2 class="section-heading h1 pt-4">เกษตรอำเภอองครักษ์</h2>
+        <!--Section description-->
+        <p class="section-description pb-4">
+            ติดต่อสอบถามข้อมูลได้ที่ ม.8 ตำบลคลองใหญ่ อำเภอองครักษ์ จังหวัดนครนายก 26120 <br />
+            โทร/โทรสาร : 037-391-295
+        </p><br />
+        <!--Grid column-->
+        <div class="col-mb-4">
+            <div class="col-md-4 card-mini " style="border-radius:10px;padding:10px;">
+                <!--Form with header-->
+                <!--Header-->
+                <div class=" blue accent-1 w3-banner-top" style="height:50px;width:93%;padding:10px;border-radius:10px;margin-left:10px;margin-right:10px;">
+                    <h3><i class="fas fa-envelope"></i>เขียนถึงเรา</h3>
+                </div>
+                <br />
+                <br />
+                <br />
+                <p>กรอกข้อความเฉพาะหัวข้อสำคัญ</p>
+                <br>
+                <!--Body-->
+                <div class="form-input">
+                    <i class="fas fa-user prefix grey-text"></i>
+                    <label for="form-name">ชื่อ-นามสกุล</label>
+                    <input type="text" id="form-name" class="form-control">
+
+                </div>
+
+                <div class="form-input">
+                    <i class="fas fa-envelope prefix grey-text"></i>
+                    <label for="form-email">email</label>
+                    <input type="text" id="form-email" class="form-control">
+                </div>
+
+                <div class="form-input">
+                    <i class="fas fa-tag prefix grey-text"></i>
+                    <label for="form-Subject">หัวข้อ</label>
+                    <input type="text" id="form-Subject" class="form-control">
+                </div>
+
+                <div class="form-input">
+                    <i class="fas fa-pencil-alt prefix grey-text"></i>
+                    <label for="form-text">เนื้อหา</label>
+                    <textarea id="form-text" class="form-control md-textarea" rows="3"></textarea>
+                </div>
+                <br />
+                <div class="form-input text-center">
+                    <button class="btn btn-light-blue">ส่ง</button>
+                </div>
+
+                <!--Form with header-->
+            </div>
+        </div>
+        <!--Grid column-->
+        <div class="col-md-7">
+            <!--Google map-->
+            <div id="map"></div>
+        </div>
+    </div>
+        <script>
+            // Initialize and add the map
+            function initMap() {
+                // The location of Uluru
+                var uluru = { lat: -25.344, lng: 131.036 };
+                // The map, centered at Uluru
+                var map = new google.maps.Map(
+                    document.getElementById('map'), { zoom: 4, center: uluru });
+                // The marker, positioned at Uluru
+                var marker = new google.maps.Marker({ position: uluru, map: map });
+            }
+        </script>
+    
+<!--Load the API from the specified URL
+* The async attribute allows the browser to render the page while the API loads
+* The key parameter will contain your own API key (which is not needed for this tutorial)
+* The callback parameter executes the initMap() function
+-->
+<script async defer
+        src="https://maps.googleapis.com/maps/api/js?key=YOUR_API_KEY&callback=initMap">
+</script>

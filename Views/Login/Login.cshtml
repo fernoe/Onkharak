@@ -1,0 +1,109 @@
+﻿
+@{
+    ViewBag.Title = "Login";
+}
+
+
+
+<div class="col-lg-12 col-md-12 full-screen bgfull flex-container-center" style="position:fixed;">
+
+    <div class="ccardl boxrejis" style="height:500px;width:500px;left:250px;position:absolute"></div>
+    <div class="boxrejis" style="position:absolute;width:280px;left:350px;color:black">
+
+        <div class="form-label-group">
+            <h2>สมัครสมาชิกเกษตรกร</h2>
+            <p>หากท่านยังไม่ได้สมัครสมาชิกเกษตรกร อำเภอองครักษ์ เพื่อรับการเเจ้งเตือนข่าวสาร</p>
+        </div>
+
+        <button class="btn btn-lg btn-primary btn-block" style="width:280px" onclick="Register">สมัครสมาชิก</button>
+
+
+    </div>
+
+    <div class="ccard" style="height:900px;width:600px;right:0px;top:50px;position:absolute"></div>
+    <div style="position:absolute;width:280px;right:80px;color:black">
+        <div class="text-center">
+            <img src="https://upload.wikimedia.org/wikipedia/th/6/65/%E0%B8%95%E0%B8%A3%E0%B8%B2%E0%B8%81%E0%B8%A3%E0%B8%A1%E0%B8%AA%E0%B9%88%E0%B8%87%E0%B9%80%E0%B8%AA%E0%B8%A3%E0%B8%B4%E0%B8%A1%E0%B8%81%E0%B8%B2%E0%B8%A3%E0%B9%80%E0%B8%81%E0%B8%A9%E0%B8%95%E0%B8%A3.png" style="width:100px;height:100px;text-align:center;" />
+        </div>
+
+        <div class="form-label-group">
+            <label for="inputEmail">ชื่อผู้ใช้</label>
+            <input type="email" id="inputEmail" class="form-control" style="height: 3.125rem;padding: .75rem;" placeholder="ชื่อผู้ใช้งาน" required="" autofocus="">
+        </div>
+
+        <div class="form-label-group">
+            <label for="inputPassword">รหัสผ่าน</label>
+            <input type="password" id="inputPassword" class="form-control" placeholder="รหัสผ่าน" required="">
+        </div>
+
+        <div class="checkbox col-mb-3">
+            <label>
+                <input type="checkbox" value="remember-me"> จดจำฉัน
+            </label>
+        </div>
+        <button class="btn btn-lg btn-primary btn-block" style="width:280px" type="submit">เข้าสู่ระบบ</button>
+
+
+
+        <p class="mt-5 mb-3 text-muted text-center">© update 2020</p>
+    </div>
+</div>
+
+<style>
+    .full-screen {
+        position: absolute;
+        left: 0;
+        right: 0px;
+        top: 0;
+        bottom: 0;
+    }
+
+    .flex-container-center {
+        displaY: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .full-screen {
+        color: white
+    }
+
+
+    .bgfull {
+        /* The image used */
+        background-image: url("https://www.thairath.co.th/media/dFQROr7oWzulq5FZYSPPDWAZ0OjINhfAHkyNYgfmKw2naLKEzBx5VLiy8IxkNhvrFCq.jpg");
+        /* Full height */
+        height: 100%;
+        /* Center and scale the image nicely */
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+
+    .ccard {
+        background-color: aliceblue;
+        opacity: 50%;
+        border-top-left-radius: 900px;
+        border-bottom-left-radius: 900px;
+    }
+
+    .ccardl {
+        background-color: aliceblue;
+        opacity: 70%;
+        border-top-right-radius: 500px;
+        border-bottom-right-radius: 900px;
+        border-top-left-radius: 900px;
+        border-bottom-left-radius: 500px;
+    }
+</style>
+<script>
+</script>
+
+
+
+
+
+
+
+

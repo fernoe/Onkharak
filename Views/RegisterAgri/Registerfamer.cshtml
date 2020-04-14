@@ -1,0 +1,75 @@
+﻿
+@{
+    ViewBag.Title = "Registerfamer";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<div class="container">
+    <div class="col-md-12">
+        <h2 class="featurette-heading">การลงทะเบียนเกษตรกรนาปี <span class="text-muted">สหกรณ์การเกษตร</span></h2>
+        <div class="text-center card-photo" style="background-color:#f4f5f5;width:auto;height:300px;overflow:hidden;">
+            <img src="https://iso.500px.com/wp-content/uploads/2016/05/stock-photo-133489571.jpg">
+        </div>
+        <p class="lead" style="font-size:15px">
+            &nbsp;&nbsp;ท่านสามารถกรข้อมูลการลงทะเบียนเกษตรกรได้ในส่วนกรอกข้อความด้านล่าง
+        </p>
+    </div>
+</div>
+<div class="col-md-12">
+    <div class="row text-center">
+        <div class="checkbox col-mb-4">
+            <label>
+                <input type="checkbox" value="in"> ขอขึ้นทะเบียนเกษตร &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                <input type="checkbox" value="out"> ขอปรับปรุงข้อมูลที่ขึ้นทะเบียนไว้แล้ว
+            </label>
+        </div>
+    </div>
+    <div class="row" style="margin:10px">
+        <div class="form-label-group col-md-3">
+            <label for="inputPassword">จังหวัด</label>
+            <input class="form-control" placeholder="ชื่อ" required="">
+        </div>
+        <div class="form-label-group col-md-3">
+            <label for="inputPassword">อำเภอ</label>
+            <input class="form-control" placeholder="นามสกุล" required="">
+        </div>
+        <div class="form-label-group col-md-3">
+            <label for="inputPassword">วันที่</label>
+            <input type="date" style="padding:10px;" class="form-control" placeholder="นามสกุล" required="">
+        </div>
+    </div>
+    <div class="row" style="margin:10px">
+        <div class="form-label-group col-md-3">
+            <label for="inputPassword">คำนำหน้า</label>
+            <input class="form-control" placeholder="ชื่อ" required="">
+        </div>
+        <div class="form-label-group col-md-3">
+            <label for="inputPassword">ชื่อ</label>
+            <input class="form-control" placeholder="ชื่อ" required="">
+        </div>
+        <div class="form-label-group col-md-3">
+            <label for="inputPassword">นามสกุล</label>
+            <input class="form-control" placeholder="นามสกุล" required="">
+        </div>
+        <div class="form-label-group col-md-3">
+            <label for="inputPassword">เลขบัตรประจำตัวประชาชน</label>
+            <input class="form-control" placeholder="นามสกุล" required="">
+        </div>
+    </div>
+    <div class="row" style="margin:10px">
+        <div class="form-label-group col-md-4">
+            <label for="inputPassword">ชื่อ</label>
+            <input class="form-control" placeholder="ชื่อ" required="">
+        </div>
+        <div class="form-label-group col-md-4">
+            <label for="inputPassword">นามสกุล</label>
+            <input class="form-control" placeholder="นามสกุล" required="">
+        </div>
+        <div class="form-label-group col-md-4">
+            <label for="inputPassword">อายุ</label>
+            <div class="form-inline">
+                <input class="form-control" placeholder="อายุ" required="" style="width:50px;text-align:center;"> &nbsp;<span>ปี</span>
+            </div>
+        </div>
+    </div>
+</div>

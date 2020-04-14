@@ -1,0 +1,107 @@
+﻿
+@{
+    ViewBag.Title = "Register";
+}
+
+<div class="col-lg-12 col-md-12 full-screen bgfull flex-container-center" style="position:fixed;">
+
+    <div class="ccardl " style="height:700px;width:1000px;top:100px;position:absolute"></div>
+    <div class="" style="position:absolute;width:280px;color:black">
+
+        <div class="form-label-group">
+            <h2>สมัครสมาชิกเกษตรกร</h2>
+            <p>หากท่านยังไม่ได้สมัครสมาชิกเกษตรกร อำเภอองครักษ์ เพื่อรับการเเจ้งเตือนข่าวสาร</p>
+        </div>
+        <div class="form-label-group">
+            <label for="inputEmail">ชื่อผู้ใช้</label>
+            <input type="email" id="inputEmail" class="form-control" style="height: 3.125rem;padding: .75rem;" placeholder="ชื่อผู้ใช้" required="" autofocus="">
+        </div>
+        <div class="form-label-group">
+            <label for="inputEmail">เบอร์</label>
+            <input type="email" id="inputEmail" class="form-control" style="height: 3.125rem;padding: .75rem;" placeholder="0822258469" required="" autofocus="">
+        </div>
+        <div class="form-label-group">
+            <label for="inputEmail">email</label>
+            <input type="email" id="inputEmail" class="form-control" style="height: 3.125rem;padding: .75rem;" placeholder="anuphak@hotmail.com" required="" autofocus="">
+        </div>
+        <div class="form-label-group">
+            <label for="inputEmail">อาชีพ</label>
+            <input type="email" id="inputEmail" class="form-control" style="height: 3.125rem;padding: .75rem;" placeholder="เกษตรกร" required="" autofocus="">
+        </div>
+
+        <div class="form-label-group">
+            <label for="inputPassword">รหัสผ่าน</label>
+            <input type="password" id="inputPassword" class="form-control" placeholder="รหัสผ่าน" required="">
+        </div>
+
+        <div class="form-label-group">
+            <label for="inputPassword">ยืนยัน รหัสผ่าน</label>
+            <input type="password" id="coninputPassword" class="form-control" placeholder="ยืนยัน รหัสผ่าน" required="">
+        </div>
+
+        <div class="checkbox col-mb-3">
+            <label>
+                <input type="checkbox" value="in"> เกษตรกรในพื้นที่ &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                <input type="checkbox" value="out"> เกษตรกรนอกพื้นที่
+            </label>
+        </div>
+        <button class="btn btn-lg btn-primary btn-block" style="width:280px" type="submit">สมัครสมาชิก</button>
+
+
+
+        <p class="mt-5 mb-3 text-muted text-center">© update 2020</p>
+    </div>
+
+</div>
+
+
+<style>
+    .full-screen {
+        position: absolute;
+        left: 0;
+        right: 0px;
+        top: 0;
+        bottom: 0;
+    }
+
+    .flex-container-center {
+        displaY: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .full-screen {
+        color: white
+    }
+
+
+    .bgfull {
+        /* The image used */
+        background-image: url("https://www.thairath.co.th/media/dFQROr7oWzulq5FZYSPPDWAZ0OjINhfAHkyNYgfmKw2naLKEzBx5VLiy8IxkNhvrFCq.jpg");
+        /* Full height */
+        height: 100%;
+        /* Center and scale the image nicely */
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+
+    .ccard {
+        background-color: aliceblue;
+        opacity: 50%;
+        border-top-left-radius: 900px;
+        border-bottom-left-radius: 900px;
+    }
+
+    .ccardl {
+        background-color: aliceblue;
+        opacity: 70%;
+        border-top-right-radius: 500px;
+        border-bottom-right-radius: 900px;
+        border-top-left-radius: 900px;
+        border-bottom-left-radius: 500px;
+    }
+</style>
+
+

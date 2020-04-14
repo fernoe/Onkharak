@@ -1,0 +1,164 @@
+﻿body {
+    padding-top: 50px;
+    padding-bottom: 20px;
+}
+
+/* Set padding to keep content from hitting the edges */
+.body-content {
+    padding-left: 15px;
+    padding-right: 15px;
+
+}
+
+/* Override the default bootstrap behavior where horizontal description lists 
+   will truncate terms that are too long to fit in the left column 
+*/
+.dl-horizontal dt {
+    white-space: normal;
+}
+
+/* Set width on the form input elements since they're 100% wide by default */
+input,
+select,
+textarea {
+    max-width: 280px;
+}
+/*formlogin*/
+.form-signin {
+    width: 100%;
+    max-width: 420px;
+    padding: 15px;
+    margin: auto;
+
+}
+.card-mini {
+    margin: 6px;
+    border-radius: 4px;
+    border: 1px solid rgba(var(--b6a,219,219,219),1);
+    background-color: white;
+    height: auto;
+    padding: 10px;
+}
+.sticky {
+    position: sticky;
+    top: 70px;
+}
+.card{
+    margin:10px;
+}
+.card-photo {
+    position: relative;
+    background-color: azure;
+    text-align: center;
+}
+.comment-photo {
+    width: 360px;
+    position: relative;
+    background-color:azure;
+}
+.box-body {
+    margin: 6px;
+    margin-bottom: 30px;
+    overflow: hidden;
+    position: relative;
+    transition: all 0.3s ease 0s;
+    width: 614px;
+    height: auto;
+    box-shadow: 5px 5px 15px #000;
+    border-radius: 4px;
+    border: 1px solid rgba(var(--b6a,219,219,219),1);
+    box-shadow: none;
+    background-color: white;
+}   
+.card-box-body {
+    margin-bottom: 30px;
+    overflow: hidden;
+    position: relative;
+    transition: all 0.3s ease 0s;
+    width: 614px;
+    height:auto;
+}
+.card-box-body img{
+    width:614px;
+    height:auto;
+    background-color:darkgrey;
+}
+.card-box-body .title{
+    font-size:25px;
+    font-weight:700;
+    color:tomato;
+    margin:0 0 15px 0 ;
+}
+.overlay-text .post{
+    display:block;
+    font-weight:600;
+    font-size:20px;
+    color:#fff;
+}
+.card-box-body .overlay-text{
+    width:100%;
+    height:100%;
+    font-size:16px;
+    color:#fff;
+    background:rgba(0,0,0,0.6);
+    text-align:center;
+    padding-top:20%;
+    opacity:0;
+    position:absolute;
+    top:0;
+    left:0;
+    transition:all 0.6s ease 0s;
+}
+.card-box-body .overlay-text:before{
+    border-left:1px solid rgba(255,255,255,0.9);
+    border-right:1px solid rgba(255,255,255,0.9);
+    left:30px;
+    right:30px;
+}
+.card-box-body .overlay-text:after{
+    border-top:1px solid rgba(255,255,255,0.9);
+    border-bottom:1px solid rgba(255,255,255,0.9);
+    top:30px;
+    bottom:30px;
+}
+    .card-box-body .overlay-text:before, .card-box-body .overlay-text:after {
+        content: '';
+        position: absolute;
+        top: 20px;
+        left: 20px;
+        bottom: 20px;
+        right: 20px;
+        opacity: 0;
+        z-index: 1;
+        transform: scale(1.5);
+        transition: all 0.6s ease 10s;
+    }
+.card-box-body:hover {
+    transform: translateY(-8px);
+}
+    .card-box-body:hover .overlay-text {
+        opacity: 1;
+    }
+.card-box-body .overlay-text:before,
+.card-box-body .overlay-text:after {
+    opacity: 1;
+    transform: scale(1);
+}
+/*ทำให้หายไป*/
+@media screen and (max-width: 1000px) {
+    div.minibox {
+        display: none;
+    }
+}
+
+/*ทำให้rejisterหายไป*/
+@media screen and (max-width: 1650px) {
+    div.boxrejis {
+        display: none;
+    }
+}
+
+.form-input{
+
+    padding-bottom:3px;
+}
